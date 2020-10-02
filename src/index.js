@@ -51,17 +51,14 @@ class Board extends React.Component {
   }
 }
 
-class Square extends React.Component {
-  render () {
-    return 
-    <button 
-      className="Square" 
-      onClick={() => this.props.onClick()}
-    >
-      {this.props.value}
+function Square(props) {
+  return (
+    <button className="Square" onClick={props.onClick()}>
+      {props.value}
     </button>
-  }
+  );
 }
+
 
 // ####################################################
 
