@@ -33,5 +33,6 @@ class Square extends React.Component {
 
 ReactDOM.render(
   <App />,
+  <Board />,
   document.getElementById('root')
 );
